@@ -1,0 +1,6 @@
+Model Evaluation
+----------------------
+Accuracy  : 98.80%
+Precision : 0.9881
+Recall    : 0.9880
+F1 Score  : 0.9880
