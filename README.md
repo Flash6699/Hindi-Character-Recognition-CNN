@@ -42,11 +42,11 @@ Test Accuracy:
 
 ### Streamlit User Interface
 
-![UI](results/ui_demo.png)
+![UI](results/ui.png)
 
 ### Prediction Example 1
 
-![Prediction Example 1](results/prediction_example_1.png)
+![Prediction Example 1](results/prediction_example.png)
 
 ### Prediction Example 2
 
