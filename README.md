@@ -42,7 +42,7 @@ Test Accuracy:
 
 ### Streamlit User Interface
 
-![UI](results/ui.png)
+![UI](results/UI.png)
 
 ### Prediction Example 1
 
