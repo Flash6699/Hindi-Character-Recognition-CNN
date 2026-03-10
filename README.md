@@ -1,24 +1,27 @@
 # Hindi Character Recognition using CNN
 
-A deep learning system that recognizes **handwritten Hindi (Devanagari) characters and digits** using a Convolutional Neural Network (CNN).
+<p align="center">
+  <img src="results/UI.png" width="800">
+</p>
 
-This project demonstrates a **complete machine learning pipeline** including model training, evaluation, API deployment, and a web interface for real-time predictions.
+Deep learning system for **recognizing handwritten Hindi (Devanagari) characters and digits** using a Convolutional Neural Network (CNN).  
+The project includes a **complete machine learning pipeline**: model training, evaluation, API deployment, and an interactive web interface.
 
 ---
 
 # Project Overview
 
-This project builds a **CNN-based classifier** capable of recognizing **46 handwritten Devanagari characters and digits** from images.
+This project builds a CNN-based classifier capable of recognizing **46 handwritten Devanagari characters and digits** from images.
 
-The system provides an end-to-end ML workflow:
+The system includes:
 
-* CNN model built with **PyTorch**
-* Model **training and evaluation pipeline**
-* **FastAPI backend** for inference
-* **Streamlit web interface** for interactive predictions
-* **Performance evaluation** with confusion matrix
+- CNN model built using **PyTorch**
+- **Training pipeline** for dataset processing
+- **Evaluation metrics and confusion matrix**
+- **FastAPI backend** for model inference
+- **Streamlit UI** for real-time predictions
 
-Users can upload a handwritten character image and receive the **predicted Hindi character with confidence score**.
+Users can upload a handwritten character image and receive the predicted Hindi character along with model confidence.
 
 ---
 
@@ -34,63 +37,61 @@ Test Accuracy:
 
 ### Confusion Matrix
 
-![Confusion Matrix](results/confusion_matrix.png)
+<p align="center">
+  <img src="results/confusion_matrix.png" width="650">
+</p>
 
 ---
 
 # Demo
 
-### Streamlit User Interface
+### Streamlit Interface
 
-![UI](results/UI.png)
+<p align="center">
+  <img src="results/UI.png" width="750">
+</p>
 
-### Prediction Example 1
+### Prediction Examples
 
-![Prediction Example 1](results/prediction_example.png)
+<p align="center">
+  <img src="results/prediction_example.png" width="450">
+  <img src="results/prediction_example_2.png" width="450">
+</p>
 
-### Prediction Example 2
-
-![Prediction Example 2](results/prediction_example_2.png)
-
-### Prediction Example 3
-
-![Prediction Example 3](results/prediction_example_3.png)
+<p align="center">
+  <img src="results/prediction_example_3.png" width="450">
+</p>
 
 ---
 
 # Tech Stack
 
 ### Programming Language
-
-* Python
+- Python
 
 ### Machine Learning
-
-* PyTorch
-* Torchvision
+- PyTorch
+- Torchvision
 
 ### Backend API
+- FastAPI
+- Uvicorn
 
-* FastAPI
-* Uvicorn
+### Frontend
+- Streamlit
 
-### Frontend Interface
-
-* Streamlit
-
-### Supporting Libraries
-
-* Pillow
-* Requests
+### Libraries
+- Pillow
+- Requests
+- NumPy
+- Matplotlib
 
 ---
 
 # System Architecture
 
-The project follows a **modular machine learning deployment pipeline**:
-
 ```
-User Image Upload
+User Uploads Image
         │
         ▼
 Streamlit Web Interface
@@ -105,8 +106,6 @@ PyTorch CNN Model
 Predicted Hindi Character
 ```
 
-This mirrors **real-world machine learning deployment architecture** used in production systems.
-
 ---
 
 # Project Structure
@@ -118,29 +117,28 @@ hindi_character_recognition
 │   └── api.py                # FastAPI inference server
 │
 ├── app
-│   └── app.py                # Streamlit web interface
+│   └── app.py                # Streamlit UI
 │
 ├── data
 │   ├── raw                   # Original dataset
 │   └── processed             # Processed dataset
 │
 ├── models
-│   └── hindi_cnn_best.pth    # Trained CNN model
+│   └── hindi_cnn_best.pth    # Trained model
 │
 ├── results
 │   ├── confusion_matrix.png
-│   ├── evaluation_metrics.txt
-│   ├── ui_demo.png
-│   ├── prediction_example_1.png
+│   ├── UI.png
+│   ├── prediction_example.png
 │   ├── prediction_example_2.png
 │   └── prediction_example_3.png
 │
 ├── src
-│   ├── dataset.py            # Dataset loading
-│   ├── model.py              # CNN architecture
-│   ├── train.py              # Model training
-│   ├── evaluate_model.py     # Model evaluation
-│   └── test_model.py         # Accuracy testing
+│   ├── dataset.py
+│   ├── model.py
+│   ├── train.py
+│   ├── evaluate_model.py
+│   └── test_model.py
 │
 ├── requirements.txt
 ├── README.md
@@ -151,14 +149,14 @@ hindi_character_recognition
 
 # Installation
 
-Clone the repository:
+Clone the repository
 
 ```
-git clone https://github.com/Flash6699/hindi-character-recognition-cnn.git
-cd hindi-character-recognition-cnn
+git clone https://github.com/Flash6699/Hindi-Character-Recognition-CNN.git
+cd Hindi-Character-Recognition-CNN
 ```
 
-Install dependencies:
+Install dependencies
 
 ```
 pip install -r requirements.txt
@@ -168,13 +166,13 @@ pip install -r requirements.txt
 
 # Running the Project
 
-### Start the FastAPI Server
+### Start FastAPI server
 
 ```
 uvicorn api.api:app --reload
 ```
 
-API documentation will be available at:
+Open API docs:
 
 ```
 http://127.0.0.1:8000/docs
@@ -182,19 +180,19 @@ http://127.0.0.1:8000/docs
 
 ---
 
-### Start the Streamlit Application
+### Run Streamlit UI
 
 ```
 streamlit run app/app.py
 ```
 
-Upload a handwritten Hindi character image to receive predictions.
+Upload a handwritten Hindi character image to get predictions.
 
 ---
 
 # Example Output
 
-Input: Handwritten character image
+Input: handwritten character image
 
 Output:
 
@@ -207,22 +205,22 @@ Confidence: 98.4%
 
 # Key Features
 
-* CNN-based handwritten Hindi character recognition
-* **High accuracy model (98.8%)**
-* GPU-supported training
-* FastAPI inference API
-* Streamlit interactive UI
-* Confusion matrix evaluation
-* Modular machine learning pipeline
+- CNN-based handwritten Hindi character recognition
+- **98.8% model accuracy**
+- GPU supported training
+- FastAPI model inference API
+- Streamlit interactive UI
+- Confusion matrix evaluation
+- Modular ML pipeline
 
 ---
 
 # Future Improvements
 
-* Containerize application using **Docker**
-* Add **real-time drawing canvas input**
-* Deploy API on **cloud platforms (AWS / GCP / HuggingFace Spaces)**
-* Extend system to **full Hindi word recognition**
+- Deploy with **Docker**
+- Add **real-time drawing canvas**
+- Deploy model on **cloud (AWS / GCP / HuggingFace Spaces)**
+- Extend model for **Hindi word recognition**
 
 ---
 
@@ -232,11 +230,8 @@ Vedant
 
 Machine Learning & AI Enthusiast
 
-GitHub:
-https://github.com/Flash6699
-
 ---
 
 # License
 
-This project is open-source and available under the **MIT License**.
+This project is licensed under the **MIT License**.
