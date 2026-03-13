@@ -1,5 +1,10 @@
 # Hindi Character Recognition using CNN
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-orange)
+
 <p align="center">
   <img src="results/UI.png" width="800">
 </p>
@@ -152,7 +157,7 @@ hindi_character_recognition
 Clone the repository
 
 ```
-git clone https://github.com/Flash6699/Hindi-Character-Recognition-CNN.git
+git clone https://github.com/vedant-aiml/Hindi-Character-Recognition-CNN.git
 cd Hindi-Character-Recognition-CNN
 ```
 
@@ -229,6 +234,7 @@ Confidence: 98.4%
 Vedant
 
 Machine Learning & AI Enthusiast
+https://github.com/vedant-aiml
 
 ---
 
